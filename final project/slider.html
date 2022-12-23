@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <title>Slider</title>
+    <link rel="stylesheet" type="text/css">
+    <style>
+    body
+    {
+      background-image:url('https://cdn.pixabay.com/photo/2015/07/15/11/53/hand-846092_960_720.jpg');
+      background-size: 100%;
+    }
+    nav > ul 
+    {
+      background-color: white;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav a 
+    {
+      color: inherit; 
+      display: block; 
+      font-size: 2.4rem;
+      padding: 10px;
+      text-decoration: none; 
+    }
+    nav a:hover 
+    {
+      background-color: rgb(115, 115, 115);
+      color: white;
+    }
+    </style>
+    <body>
+        <div class="final-sidebar final-bar-block final-border-right">
+        <div class="final-sidebar final-bar-block final-border-right" style="display:none;margin-right:200px; margin-bottom:600px;" id="mySidebar">
+        <button onclick="Final_close()" class="List">Close &times;</button>
+        <nav>
+            <ul>
+            <li><a href="final.html" class="Final-bar-item Final-botton">Home</a></li>
+            <li><a href="change-up.html" class="Final-bar-item Final-button">Change-up</a></li>
+            <li><a href="slider.html" class="Final-bar-item Final-button">Slider</a></li>
+            <li><a href="curve.html" class="Final-bar-item Final-button">Curve</a></li>
+            <li><a href="butterfly.html" class="Final-bar-item Final-button">Butterfly</a></li>
+            <li><a href="four-seam.html" class="Final-bar-item Final-button">Four-Seam</a></li>
+            <li><a href="challenge.html" class="Final-bar-item Fianl-bottom">Challenge</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="Final-teal">
+            <button class="Final-button" onclick="Final_open()" style="width: 50px; height:20px;">&#9776;</button>
+            <div class="Final-container" style="font-size:50px;">
+              <b><font color="white">Slider</font color></b>
+            </div>
+          </div>
+          </div>
+        <script>
+        function Final_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function Final_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
+    </body>
+</html>
